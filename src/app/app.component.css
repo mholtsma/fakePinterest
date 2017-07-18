@@ -1,0 +1,42 @@
+.header {
+  border-bottom: 1px solid #e7e7e7;
+  color: #333;
+  font-size: 20px;
+  margin: 0;
+  min-height: 20px;
+  padding: 17px 50px 13px 18px;
+  padding-right: 50px;
+  position: relative;
+}
+
+.headerText {
+  color: #333;
+  font-size: 20px;
+  margin: 0;
+  min-height: 20px;
+  display: inline-block;
+}
+
+.headerSearch {
+  border: none;
+  color: #333;
+  display: inline-block;
+  font-family: 'Helvetica Neue', 'Helvetica', '\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3', 'Hiragino Kaku Gothic Pro', '\30E1\30A4\30EA\30AA', 'Meiryo', '\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF', arial, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -.15px;
+  line-height: 16px;
+  margin: 5px 0 6px;
+  overflow: hidden;
+  resize: none;
+  width: 165px;
+  word-spacing: 0;
+  word-wrap: break-word;
+  background-color: #efefef;
+}
+
+.searchContainer {
+  background-color: #efefef;
+  display: inline-block;
+  width: 50%;
+}
