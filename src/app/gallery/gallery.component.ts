@@ -12,9 +12,9 @@ import { ImageService } from '../shared/image.service';
 })
 
 export class GalleryComponent {
-	
+
 	displayImages: any[] = [];
-	
+
 	constructor (private imageService: ImageService) {
 		this.displayImages = this.imageService.getAllImages();
 	}
