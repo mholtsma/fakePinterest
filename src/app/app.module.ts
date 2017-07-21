@@ -8,7 +8,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 @NgModule({
   declarations: [
     AppComponent,
-	GalleryComponent
+    GalleryComponent
   ],
   imports: [
     BrowserModule
