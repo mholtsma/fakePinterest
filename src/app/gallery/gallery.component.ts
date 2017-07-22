@@ -13,8 +13,8 @@ import { ImageService } from '../shared/image.service';
 
 export class GalleryComponent implements OnChanges {
 
-	displayImages: any[] = [];
-	@Input() filter?: string = 'all'
+	displayImages: any[] = [];		 // Image array holds any type
+	@Input() filter?: string = 'all' // Default displays all images
 	
 	constructor (private imageService: ImageService) {
 		this.displayImages = this.imageService.getAllImages();

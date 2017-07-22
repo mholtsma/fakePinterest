@@ -1,4 +1,5 @@
 <div>
+	<!-- Filter buttons -->
 	<button 
 		(click)="filter='all'">
 		All
@@ -13,8 +14,15 @@
 	</button>
 	
 	<ul id="thumbnailsList">
+	
+		<!-- Iterate thru imgs in array -->
+		<!-- Pipe for filter and displays correct images -->
 		<li *ngFor="let image of (displayImages | imageFilter:filter)">
-			<img src="{{image.url}}" class="tn">
+		
+		    <!-- Anchor tag: Create hyperlink -->
+			<a [routerLink]="['/image', image.id]">
+				<img src="{{image.url}}" class="tn">
+			</a>
 		</li>
 	</ul>
 </div>
