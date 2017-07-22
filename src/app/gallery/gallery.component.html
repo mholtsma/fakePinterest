@@ -1,7 +1,21 @@
 <div>
+	<button 
+		(click)="filter='all'">
+		All
+	</button>
+	<button 
+		(click)="filter='Whalemoji'">
+		Whalemoji
+	</button>
+	<button
+		(click)="filter='Blender'">
+		Blender
+	</button>
+	
 	<ul id="thumbnailsList">
-		<li *ngFor="let image of displayImages">
-			<img src="{{image.url}}" class="tn" width="200" height="200">
+		<li *ngFor="let image of (displayImages | imageFilter:filter)">
+			<img src="{{image.url}}" class="tn">
 		</li>
 	</ul>
 </div>
+
