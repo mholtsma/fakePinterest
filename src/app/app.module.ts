@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { ImageFilterPipe } from './shared/filter.pipe'
 import { ImageService } from './shared/image.service';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navigationBar/navbar.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ImageDetailComponent } from './images/image-detail.component';
 import { appRoutes } from '../routes';
@@ -12,6 +13,7 @@ import { appRoutes } from '../routes';
 @NgModule({
   declarations: [
     AppComponent,
+	NavbarComponent,
     GalleryComponent,
     ImageDetailComponent,
 	ImageFilterPipe

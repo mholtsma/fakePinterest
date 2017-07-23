@@ -1,0 +1,36 @@
+nav {
+	background-color: white;
+}
+
+.logo {
+	font-size: 1.2em;
+}
+
+ul.nav a:hover {
+	background-color: #f3f3f3;
+	color: red;
+}
+
+.headerSearch {
+  border: none;
+  color: #333;
+  display: inline-block;
+  font-family: 'Helvetica Neue', 'Helvetica', '\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3', 'Hiragino Kaku Gothic Pro', '\30E1\30A4\30EA\30AA', 'Meiryo', '\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF', arial, sans-serif;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -.15px;
+  line-height: 16px;
+  margin: 5px 0 6px 20px;
+  overflow: hidden;
+  resize: none;
+  width: 265px;
+  word-spacing: 0;
+  word-wrap: break-word;
+  background-color: #efefef;
+}
+
+.searchContainer {
+  background-color: #efefef;
+  display: inline-block;
+  width: 50%;
+}
