@@ -1,14 +1,15 @@
 nav {
 	background-color: white;
+	position: fixed;
+	top: 0;
 }
 
 .logo {
 	font-size: 1.2em;
 }
 
-ul.nav a:hover {
-	background-color: #f3f3f3;
-	color: red;
+.button {
+	float: right;
 }
 
 .headerSearch {
