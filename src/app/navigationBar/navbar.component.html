@@ -1,16 +1,19 @@
 <div>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
-			<div class="navbar-header">		
+			<div class="navbar-header">
 				<!-- Home link -->
 				<a class="navbar-brand logo" href="#">{{title}}</a>
-				
+
 				<!-- Search bar -->
-				<input class="headerSearch" placeholder="Search">
-				
+				<input [(ngModel)]=query class="headerSearch" placeholder="Search" (keyup.enter)="search()">
+        <button (click)="search()">
+          search
+        </button>
+
 				<!-- Notification button -->
 				<input type="button" value="Notifications" style="float:right">
-				
+
 				<!-- Profile btn-->
 				<input type="button" value="Profile" style="float:right">
 			</div>
