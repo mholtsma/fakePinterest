@@ -15,7 +15,7 @@ import {Subscription} from 'rxjs/Subscription';
 })
 
 export class GalleryComponent implements OnChanges, OnInit, OnDestroy {
-  displayImages: any[] = [];		 // Image array holds any type
+  displayImages: any[] = [];     // Image array holds any type
   private  sub: Subscription;
   @Input() filter?: string = 'all'; // Default displays all images
 

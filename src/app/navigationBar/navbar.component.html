@@ -1,22 +1,25 @@
 <div>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<!-- Home link -->
-				<a class="navbar-brand logo" href="#">{{title}}</a>
+  <div class="nav">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- Home link -->
+        <a class="navbar-brand logo" href="#">{{title}}</a>
 
-				<!-- Search bar -->
-				<input [(ngModel)]=query class="headerSearch" placeholder="Search" (keyup.enter)="search()">
+        <!-- Search bar -->
+        <input [(ngModel)]=query class="headerSearch" placeholder="Search" (keyup.enter)="search()">
         <button (click)="search()">
-          search
+          Search
         </button>
 
-				<!-- Notification button -->
-				<input type="button" value="Notifications" style="float:right">
-
-				<!-- Profile btn-->
-				<input type="button" value="Profile" style="float:right">
-			</div>
-		</div>
-	</nav>
+		<button class="notification">Notifications</button>
+		<button class="profile">Profile</button>
+        <!-- Notification button 
+        <input type="button" value="Notifications" style="float:right">
+-->
+        <!-- Profile btn
+        <input type="button" value="Profile" style="float:right">
+		-->
+      </div>
+    </div>
+  </div>
 </div>

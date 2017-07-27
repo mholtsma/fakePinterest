@@ -1,15 +1,23 @@
+/*For testing*/
+* {
+  border: 1px solid;
+}
+
 nav {
-	background-color: white;
-	position: fixed;
-	top: 0;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: inline-block;
+  padding: 30px;
 }
 
 .logo {
-	font-size: 1.2em;
+  font-size: 1.2em;
 }
 
-.button {
-	float: right;
+.notification, .profile, .headerSearch {
+
 }
 
 .headerSearch {

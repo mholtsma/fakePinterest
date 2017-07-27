@@ -13,5 +13,5 @@ li {
 	width: 25%;
 	height: 25%;
 	margin: 6px;
-	box-shadow: #acacac 1px 1px 8px 1px;
+	border-radius: 5px;
 }
