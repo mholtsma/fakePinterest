@@ -1,23 +1,20 @@
-/*For testing*/
 * {
-  border: 1px solid;
+  border: 1px solid; /* For testing */
 }
 
-nav {
+.nav {
   background-color: white;
   position: fixed;
   top: 0;
   width: 100%;
-  display: inline-block;
-  padding: 30px;
+  margin: auto;
+  padding: 0.3em;
+  text-align: center;
 }
 
-.logo {
+.homeBtn {
   font-size: 1.2em;
-}
-
-.notification, .profile, .headerSearch {
-
+  float: left;
 }
 
 .headerSearch {
