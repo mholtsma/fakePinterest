@@ -1,0 +1,10 @@
+/* Module dependencies */
+var app = require(../src/app);
+var debug = require('debug')('mean-app:server');
+var http = require('http');
+
+/* Get port from environment and store in express */
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
+/* Create HTTP server */

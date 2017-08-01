@@ -1,15 +1,15 @@
 /*
-   Mongo Terms:
+   MongoDB Terms:
    collection = table
    document   = row
    field      = column
 */
 
 var MongoClient = require('mongodb').MongoClient, assert = require('assert');
-//var mongoose = require('mongoose');  // Load mongoose package
+//var mp = require('mongodb-promise');
  
 // Connection URL 
-var url = 'mongodb://localhost:27017/fakePinterest';
+var url = 'mongodb://admin:Pineapple123@cluster0-shard-00-00-tfniz.mongodb.net:27017,cluster0-shard-00-01-tfniz.mongodb.net:27017,cluster0-shard-00-02-tfniz.mongodb.net:27017/db?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin';
 
 // Use connect method to connect to the Server 
 MongoClient.connect(url, function(err, db) {
@@ -30,22 +30,9 @@ var insertDocs = function(db, callback) {
     name: 'Marc',
     note: 'We did it'
   }); 
+   
+  collection.insert ({
+    name: 'Test',
+    note: 'One Two Three'
+  }); 
 }
-
-//mongoose.connect('mongodb://localhost/fakePinterest');
-
-/* var fakePinterestSchema = new mongoose.Schema({ // Create schema
-  name: String,
-  note: String,
-}) */
-
-// Create model based on schema
-/* var fakePinterest = mongoose.model('fakePinterest', 
-                                   fakePinterestSchema); */
-// Create in memory
-//var testdb = new fakePinterest({name: 'Marc', note: 'We did it!'});
- 
-/* testdb.save(function(err) {  				  	   // Save to db
-  if (err) console.log(err);
-  else console.log(testdb);
-}); */
