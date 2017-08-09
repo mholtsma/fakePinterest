@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { ImageFilterPipe } from './shared/filter.pipe';
 import { ImageService } from './shared/image.service';
@@ -21,6 +22,7 @@ import { appRoutes } from '../routes';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
