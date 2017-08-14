@@ -11,6 +11,7 @@ import { NavbarComponent } from './navigationBar/navbar.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ImageDetailComponent } from './images/image-detail.component';
 import { appRoutes } from '../routes';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { appRoutes } from '../routes';
     NavbarComponent,
     GalleryComponent,
     ImageDetailComponent,
-    ImageFilterPipe
+    ImageFilterPipe,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

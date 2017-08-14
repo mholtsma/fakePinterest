@@ -6,14 +6,13 @@
   background-color: white;
   position: fixed;
   top: 0;
-  width: 100%;
-  margin: auto;
-  padding: 0.3em;
-  text-align: center;
+  width: 97%;
+  height: 2.5em;
 }
 
 .homeBtn {
   font-size: 1.2em;
+  margin: 0.5em;
   float: left;
 }
 
@@ -26,10 +25,10 @@
   -webkit-font-smoothing: antialiased;
   letter-spacing: -.15px;
   line-height: 16px;
-  margin: 5px 0 6px 20px;
+  margin: 0.5em;
   overflow: hidden;
   resize: none;
-  width: 265px;
+  width: 250px;
   word-spacing: 0;
   word-wrap: break-word;
   background-color: #efefef;
@@ -38,5 +37,21 @@
 .searchContainer {
   background-color: #efefef;
   display: inline-block;
-  width: 50%;
+  width: 100%;
+  margin: 0.5em;
+}
+
+.searchBtn {
+  text-align: center;
+  margin: 0.5em;
+}
+
+.notifications {
+  float: right;
+  margin: 0.5em;
+}
+
+.profile {
+  float: right;
+  margin: 0.5em;
 }

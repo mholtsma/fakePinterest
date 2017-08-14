@@ -1,17 +1,26 @@
 ul { 
-	padding: 0; 
-	width: 1200px;
-	margin: 20px auto;
+  padding: 0; 
+  width: 75%;
+  margin: 20px auto;
 }
 
 li {
-	display: inline;
+  display: inline;
 }
 
 /* Thumbnail */
 .tn {
-	width: 25%;
-	height: 25%;
-	margin: 6px;
-	border-radius: 5px;
+  width: 25%;
+  height: 25%;
+  margin: 2em;
+  border-radius: 0.5em;
+  opacity: 1;
+}
+
+.tn:hover {
+  opacity: 0.5;
+}
+
+#thumbnailsList {
+
 }

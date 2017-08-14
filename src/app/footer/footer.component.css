@@ -1,0 +1,23 @@
+* {
+  border: 1px solid; /* For testing */
+}
+
+.footer {
+  /* margin-top: 100%; */
+  background-color: red; 
+  width: 97%;
+  margin-bottom: 10%;
+}
+
+.circularBtn, .privacy {
+  float: right;
+  clear: right;
+  display: block;
+  bottom: 0;
+  margin: 0.5em;
+  border-radius: 50%;
+}
+
+.privacy {
+  border-radius: 0.35em;
+}
