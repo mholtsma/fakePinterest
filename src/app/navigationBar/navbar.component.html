@@ -1,14 +1,28 @@
-<div class="nav">
 
-  <!-- Home link -->
-  <a class="homeBtn" href="#">{{title}}</a>
+<!-- Bootstrap core CSS -->
+<link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Search bar -->
-  <input [(ngModel)]=query class="headerSearch" placeholder="Search" (keyup.enter)="search()">
-  <button class="searchBtn" (click)="search()">Search</button>
+<!-- Bootstrap theme -->
+<link href="../../assets/css/bootstrap-theme.min.css" rel="stylesheet">
 
-  <button class="notifications">Notifications</button>
-  <button class="profile">Profile</button>
+<!-- Custom styles for this template -->
+<link href="../../assets/css/theme.css" rel="stylesheet">
 
+<div class="row">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+
+      <!-- Home link -->
+      <a class="homeBtn" href="#">{{title}}</a>
+
+
+      <!-- Search bar -->
+      <input [(ngModel)]=query class="headerSearch" placeholder="Search" (keyup.enter)="search()">
+      <button class="searchBtn" (click)="search()">Search</button>
+
+      <button class="notifications">Notifications</button>
+      <button class="profile">Profile</button>
+
+    </div>
+  </nav>
 </div>
-

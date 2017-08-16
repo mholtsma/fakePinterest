@@ -1,12 +1,5 @@
-* {
-  border: 1px solid; /* For testing */
-}
-
-.nav {
+nav {
   background-color: white;
-  position: fixed;
-  top: 0;
-  width: 97%;
   height: 2.5em;
 }
 
