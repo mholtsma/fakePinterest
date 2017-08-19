@@ -1,24 +1,24 @@
+<!-- Bootstrap core CSS -->
+<link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap theme -->
+<link href="../../assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="../../assets/css/theme.css" rel="stylesheet">
+
 <div>
 	<!-- Filter buttons -->
-	<button 
-		(click)="filter='all'">
-		All
-	</button>
-	<button 
-		(click)="filter='Whalemoji'">
-		Whalemoji
-	</button>
-	<button
-		(click)="filter='Blender'">
-		Blender
-	</button>
-	
+	<button type="button" class="btn btn-default" (click)="filter='all'">All</button>
+	<button type="button" class="btn btn-default" (click)="filter='Whalemoji'">Whalemoji</button>
+	<button type="button" class="btn btn-default" (click)="filter='Blender'">Blender</button>
+
 	<ul id="thumbnailsList">
-	
+
 		<!-- Iterate thru imgs in array -->
 		<!-- Pipe for filter and displays correct images -->
 		<li *ngFor="let image of (displayImages | imageFilter:filter)">
-		
+
 		    <!-- Anchor tag: Create hyperlink -->
 			<a [routerLink]="['/image', image.id]">
 				<img src="{{image.url}}" class="tn">

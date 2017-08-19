@@ -3,10 +3,18 @@ nav {
   height: 2.5em;
 }
 
+btn-secondary {
+
+}
+
+btn-secondary:hover {
+
+}
+
 .homeBtn {
   font-size: 1.2em;
   margin: 0.5em;
-  float: left;
+  /*float: left;*/
 }
 
 .headerSearch {
@@ -39,12 +47,7 @@ nav {
   margin: 0.5em;
 }
 
-.notifications {
-  float: right;
-  margin: 0.5em;
-}
-
-.profile {
-  float: right;
+.notifications, .profile {
+  /*float: right;*/
   margin: 0.5em;
 }

@@ -8,21 +8,20 @@
 <!-- Custom styles for this template -->
 <link href="../../assets/css/theme.css" rel="stylesheet">
 
-<div class="row">
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
 
-      <!-- Home link -->
-      <a class="homeBtn" href="#">{{title}}</a>
+    <!-- Home link -->
+    <a type="button" class="homeBtn btn btn-secondary" href="#">{{title}}</a>
 
 
-      <!-- Search bar -->
-      <input [(ngModel)]=query class="headerSearch" placeholder="Search" (keyup.enter)="search()">
-      <button class="searchBtn" (click)="search()">Search</button>
+    <!-- Search bar -->
+    <input [(ngModel)]=query class="headerSearch" placeholder="Search" (keyup.enter)="search()">
+    <button type="button" class="searchBtn btn btn-secondary" (click)="search()">Search</button>
 
-      <button class="notifications">Notifications</button>
-      <button class="profile">Profile</button>
 
-    </div>
-  </nav>
-</div>
+    <a type="button" class="notifications btn btn-secondary">Notifications</a>
+    <a type="button" class="profile btn btn-secondary">Profile</a>
+
+  </div>
+</nav>

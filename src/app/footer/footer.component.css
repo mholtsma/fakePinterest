@@ -1,12 +1,14 @@
-* {
-  border: 1px solid; /* For testing */
-}
-
-.footer {
+nav {
   /* margin-top: 100%; */
-  background-color: red; 
+  background-color: #2aabd2;
+  opacity: 0;
   width: 97%;
   margin-bottom: 10%;
+  padding-bottom: 1em;
+}
+
+btn {
+  opacity: 1;
 }
 
 .circularBtn, .privacy {
