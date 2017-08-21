@@ -9,12 +9,12 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://admin:Pineapple123@cluster0-shard-00-00-tfniz.mongodb.net:27017,cluster0-shard-00-01-tfniz.mongodb.net:27017,cluster0-shard-00-02-tfniz.mongodb.net:27017/db?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin');
 
 var userSchema = mongoose.Schema ({
-  username: String,
+  username: String,                         // All of these are left blank unless manually filled in - no default values
   firstname: String,
   lastname: String,
   age: Number,
-  created: {type: Date, default: Date.now}
-});
+  created: {type: Date, default: Date.now}  // Created with a default value
+}, {collection: "users"});                  // Name of the collection - override mongoose naming convention
 
 var userModel = mongoose.model("UserModel", userSchema);
 
