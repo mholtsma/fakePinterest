@@ -1,1 +1,125 @@
-/* You can add global styles to this file, and also import other style files */
+/* NAVBAR COMPONENT ------------------------------------------------------------------------------------------------- */
+nav {
+  background-color: white;
+  height: 2.7em;
+}
+
+btn-secondary {
+  padding: 1px 1px; /* I JUST WANNA MAKE THE BUTTON SMALLER */
+}
+
+btn-secondary:hover {
+
+}
+
+.homeBtn {
+  font-size: 1.2em;
+  /*float: left;*/
+}
+
+.headerSearch {
+  border: none;
+  color: #333;
+  display: inline-block;
+  font-family: 'Helvetica Neue', 'Helvetica', '\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3', 'Hiragino Kaku Gothic Pro', '\30E1\30A4\30EA\30AA', 'Meiryo', '\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF', arial, sans-serif;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -.15px;
+  line-height: 16px;
+  margin: 0.5em;
+  overflow: hidden;
+  resize: none;
+  width: 250px;
+  word-spacing: 0;
+  word-wrap: break-word;
+  background-color: #efefef;
+}
+
+.searchContainer {
+  background-color: #efefef;
+  display: inline-block;
+  width: 100%;
+}
+
+.searchBtn {
+  text-align: center;
+  margin: 0.5em;
+}
+
+.notifications, .profile {
+  /*float: right;*/
+}
+
+/* FOOTER COMPONENT ------------------------------------------------------------------------------------------------- */
+/* I'm trying to make the nav bar transparent, but not the buttons D:*/
+
+nav {
+  /* margin-top: 100%; */
+  background-color: #2aabd2;
+  opacity: 0.5;
+  width: 97%;
+  margin-bottom: 10%;
+  padding-bottom: 1em;
+}
+
+btn {
+  opacity: 1;
+}
+
+.circularBtn, .privacy {
+  float: right;
+  clear: right;
+  display: block;
+  bottom: 0;
+  margin: 0.5em;
+  border-radius: 50%;
+}
+
+.privacy {
+  border-radius: 0.35em;
+}
+
+/* GALLERY COMPONENT ------------------------------------------------------------------------------------------------ */
+ul {
+  padding: 0;
+  width: 75%;
+  margin: 20px auto;
+}
+
+li {
+  display: inline;
+}
+
+/* Thumbnail */
+.tn {
+  width: 25%;
+  height: 25%;
+  margin: 2em;
+  border-radius: 0.5em;
+  opacity: 1;
+}
+
+.tn:hover {
+  opacity: 0.5;
+}
+
+#thumbnailsList {
+
+}
+
+/* IMAGE-DETAIL COMPONENT ------------------------------------------------------------------------------------------- */
+.img-container {
+  margin-top: 24px;
+  height: 600px;
+  width: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-content: center;
+}
+
+#title {
+  font-size: 1.5em;
+  padding: 18px;
+}
+
+/* LOGIN COMPONENT -------------------------------------------------------------------------------------------------- */
