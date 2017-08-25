@@ -10,18 +10,20 @@
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
+    <ul class="nav navbar-nav">
 
-    <!-- Home link -->
-    <a type="button" class="homeBtn btn btn-secondary" href="#">{{title}}</a>
-
-
-    <!-- Search bar -->
-    <input [(ngModel)]=query class="headerSearch" placeholder="Search" (keyup.enter)="search()">
-    <button type="button" class="searchBtn btn btn-secondary" (click)="search()">Search</button>
+      <!-- Home link -->
+      <li><a type="button" class="homeBtn btn btn-secondary" href="#">{{title}}</a></li>
 
 
-    <a type="button" class="notifications btn btn-secondary">Notifications</a>
-    <a type="button" class="profile btn btn-secondary">Profile</a>
+      <!-- Search bar -->
+      <li><input [(ngModel)]=query class="headerSearch" placeholder="Search" (keyup.enter)="search()"></li>
+      <li><button type="button" class="searchBtn btn btn-secondary" (click)="search()">Search</button></li>
 
+
+      <li><a type="button" class="notifications btn btn-secondary">Notifications</a></li>
+      <li><a href="login" type="button" class="profile btn btn-secondary">Profile</a></li>
+
+    </ul>
   </div>
 </nav>

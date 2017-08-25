@@ -12,6 +12,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ImageDetailComponent } from './images/image-detail.component';
 import { appRoutes } from '../routes';
 import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './footer/footer.component';
     GalleryComponent,
     ImageDetailComponent,
     ImageFilterPipe,
-    FooterComponent
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

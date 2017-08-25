@@ -1,7 +1,9 @@
+/* I'm trying to make the nav bar transparent, but not the buttons D:*/
+
 nav {
   /* margin-top: 100%; */
   background-color: #2aabd2;
-  opacity: 0;
+  opacity: 0.5;
   width: 97%;
   margin-bottom: 10%;
   padding-bottom: 1em;

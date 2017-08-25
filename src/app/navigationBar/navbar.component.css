@@ -1,10 +1,10 @@
 nav {
   background-color: white;
-  height: 2.5em;
+  height: 2.7em;
 }
 
 btn-secondary {
-
+  padding: 1px 1px; /* I JUST WANNA MAKE THE BUTTON SMALLER */
 }
 
 btn-secondary:hover {
@@ -13,7 +13,6 @@ btn-secondary:hover {
 
 .homeBtn {
   font-size: 1.2em;
-  margin: 0.5em;
   /*float: left;*/
 }
 
@@ -39,7 +38,6 @@ btn-secondary:hover {
   background-color: #efefef;
   display: inline-block;
   width: 100%;
-  margin: 0.5em;
 }
 
 .searchBtn {
@@ -49,5 +47,4 @@ btn-secondary:hover {
 
 .notifications, .profile {
   /*float: right;*/
-  margin: 0.5em;
 }
