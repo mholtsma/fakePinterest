@@ -1,0 +1,13 @@
+.login {
+  margin: 1em;
+}
+
+.form-control, .btn {
+  margin: 1em;
+}
+
+.btn {
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
