@@ -28,6 +28,28 @@ export class AuthentificationService {
   }
 
   login (username: String, password: String): Observable<boolean> {
-    return this.http.post()
+    return this.http.post('',
+                           JSON.stringify({username: username, password: password}))
+      .map((response: Response) => {
+
+        // If there's a jwt token in response, login successful
+        let token = response.json() && response.json().token;
+        if (token) {
+          this.token = token;   // Set token property
+          localStorage.setItem('currentUser',
+            JSON.stringify({username: username, token: token}));
+          return true;          // Successful login
+        }
+        else {
+          return false;       // Failed login
+        }
+      });
+  }
+
+  logout(): void {
+
+    // Clearn token, remove user from local storage
+    this.token = null;
+    localStorage.removeItem('currentUser');
   }
 }
