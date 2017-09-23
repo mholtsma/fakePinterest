@@ -17,7 +17,7 @@ import { Observable } from 'rxjs';
 import 'rxjs/add/operator/map';
 
 @Injectable()
-export class AuthentificationService {
+export class AuthenticationService {
   public token: String;
 
   constructor (private  http: Http) {
@@ -41,14 +41,14 @@ export class AuthentificationService {
           return true;          // Successful login
         }
         else {
-          return false;       // Failed login
+          return false;         // Failed login
         }
       });
   }
 
   logout(): void {
 
-    // Clearn token, remove user from local storage
+    // Clear token, remove user from local storage
     this.token = null;
     localStorage.removeItem('currentUser');
   }

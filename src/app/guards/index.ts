@@ -1,1 +1,1 @@
-ECHO is on.
+export * from './auth.guard';

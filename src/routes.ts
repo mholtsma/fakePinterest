@@ -1,11 +1,16 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes} from '@angular/router';
 import { GalleryComponent } from './app/gallery/gallery.component';
 import { ImageDetailComponent } from './app/images/image-detail.component';
-import { LoginComponent } from "./app/login/login.component";
+import { LoginComponent } from './app/login/login.component';
+import { AuthGuard } from './app/guards/index';
 
 export const appRoutes: Routes = [
-  { path: 'gallery', component: GalleryComponent },
+
+  // Secure gallery route by passing AuthGuard to canActivate property
+  { path: 'gallery', component: GalleryComponent, canActivate: [AuthGuard] },
   { path: 'image/:id', component: ImageDetailComponent },
   { path: '', redirectTo: '/gallery', pathMatch: 'full'},
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent}
 ];
+
+export const routing = RouterModule.forRoot(appRoutes);

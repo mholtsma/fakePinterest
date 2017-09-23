@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 
 import { ImageFilterPipe } from './shared/filter.pipe';
 import { ImageService } from './shared/image.service';
@@ -13,6 +14,10 @@ import { ImageDetailComponent } from './images/image-detail.component';
 import { appRoutes } from '../routes';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
+import { routing } from '../routes';
+
+import { AuthGuard } from './guards/auth.guard';
+import { AuthenticationService } from '../services/authentification.service';
 
 @NgModule({
   declarations: [
@@ -27,10 +32,17 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    HttpModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    routing
+  //  RouterModule.forRoot(appRoutes)
   ],
-  providers: [ImageService, ImageFilterPipe],
+  providers: [
+    ImageService,
+    ImageFilterPipe,
+    AuthGuard,
+    AuthenticationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,7 +4,7 @@ Uses authentication service to login/logout of app.
 
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthenticationService } from '../../services/index';
+import { AuthenticationService } from '../../services/authentification.service';
 
 @Component ({
   moduleId: module.id,
