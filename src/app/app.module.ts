@@ -15,7 +15,8 @@ import { appRoutes } from '../routes';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { routing } from '../routes';
-
+import { SignupComponent } from './signup/signup.component';
+import { UserService } from '../services/user.service';
 import { AuthGuard } from './guards/auth.guard';
 import { AuthenticationService } from '../services/authentification.service';
 
@@ -27,7 +28,8 @@ import { AuthenticationService } from '../services/authentification.service';
     ImageDetailComponent,
     ImageFilterPipe,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,7 @@ import { AuthenticationService } from '../services/authentification.service';
   providers: [
     ImageService,
     ImageFilterPipe,
+    UserService,
     AuthGuard,
     AuthenticationService
   ],

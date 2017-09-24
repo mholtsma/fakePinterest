@@ -3,7 +3,7 @@ Uses authentication service to login/logout of app.
  */
 
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { AuthenticationService } from '../../services/authentification.service';
 
 @Component ({
@@ -18,8 +18,10 @@ export class LoginComponent implements OnInit {
   loading = false;
   error = '';
 
-  constructor (private router: Router,
-               private authenticationService: AuthenticationService) {}
+  constructor (
+    private router: Router,
+    private route: ActivatedRoute,
+    private authenticationService: AuthenticationService) {}
 
   ngOnInit() {
     this.authenticationService.logout();  // Reset login status

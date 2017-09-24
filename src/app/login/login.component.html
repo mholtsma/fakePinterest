@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Login</title>
+  <title>Log in</title>
 
   <!-- Bootstrap core CSS -->
   <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
@@ -23,14 +23,13 @@
       <!-- Username and password input fields -->
       <input name="username" type="text" class="form-control" id="username" placeholder="Username"
              [(ngModel)]="model.username" #username="ngModel" required/>
-
       <div *ngIf="f.submitted && !username.valid" class="help-block">Username required.</div>
     </div>
 
     <div class="form-group" [ngClass]="{'has-error': f.submitted && !password.valid}">
       <input type="password" class="form-control" name="password" placeholder="Password"
              [(ngModel)]="model.password" #password="ngModel" required/>
-      <div *ngIf="f.submitted && !password.valid" class="help-block"></div>
+      <div *ngIf="f.submitted && !password.valid" class="help-block">Password required.</div>
     </div>
 
     <!--<input name="password" type="password" class="form-control" id="password" placeholder="Password">-->
@@ -38,8 +37,8 @@
     <!-- Login and Sign Up Buttons-->
     <div>
       <!--<a class="btn btn-default btn-danger btn-block">Log in</a>-->
-      <!--<a class="btn btn-default btn-primary btn-block">Sign Up</a>-->
       <button [disabled]="loading" class="btn btn-primary">Log in</button>
+      <a [routerLink]="['/signup']"class="btn btn-default btn-primary btn-block">Sign Up</a>
     </div>
 
     <div *ngIf="error" class="alert alert-danger">{{error}}</div>

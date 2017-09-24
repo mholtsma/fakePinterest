@@ -2,6 +2,7 @@ var mongoose = require("mongoose");
 
 var userSchema = mongoose.Schema ({
   username: String,                         // All of these are left blank unless manually filled in - no default values
+  password: String,
   firstname: String,
   lastname: String,
   age: Number,
